@@ -1,12 +1,12 @@
 import React from "react";
 import "../App.css";
 import { useDispatch, useSelector } from "react-redux";
-import { addToCart, removeFromCart } from "../Features/productSlice.js"; // Make sure to import the action creators
+import { addToCart, removeFromCart } from "../Features/productSlice.js"; 
 import { Link } from 'react-router'
 function CartDiv() {
   console.log("in cart");
-  const cart = useSelector((state) => state.cart); // Access cart from ECom slice
-  const totalCost = useSelector((state) => state.totalCost); // Access totalCost from ECom slice
+  const cart = useSelector((state) => state.cart);
+  const totalCost = useSelector((state) => state.totalCost);
   const dispatch = useDispatch();
 
   return (
@@ -49,8 +49,7 @@ function CartDiv() {
       </div>
       <div id="totalCost" className="w-full">
         Grand Total = ${totalCost}
-        {/* Formatting the total cost as currency */}
-        <div className="placeOrder">
+          <div className="placeOrder">
           <Link to="Order">Proceed to Pay</Link>
         </div>
       </div>

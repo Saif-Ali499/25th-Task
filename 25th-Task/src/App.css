@@ -1,0 +1,154 @@
+#navBar{
+  height: 3rem;
+  width: 100vw;
+  display: flex;
+  padding: 3rem;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2px solid black;
+}
+.navOptions{
+  height: 3rem;
+  width: 8rem;
+  margin-left: 5rem;
+  text-align: center;
+  align-content: center;
+}
+.imgTag{
+  width: 5rem;
+  aspect-ratio: 2;
+  mix-blend-mode: multiply;
+  background-size: cover;
+}
+#wraperDiv{
+  display: flex;
+  margin: 2px;
+  padding: 2rem;
+  gap: 10px;
+  
+}
+#products{
+  max-width:80rem;
+  display: flex;
+  flex-wrap:wrap;
+  padding: 0rem 2rem;
+  justify-content: center;
+  border: 2px solid black;
+  margin: 7rem 0;
+  
+}
+
+.productCard{
+  height: 19rem;
+  width: 12.2rem;
+  margin: 2em;
+  border: 2px solid green;
+}
+.sImg,.itemImg{
+  height: 12rem;
+  aspect-ratio: 1;
+  mix-blend-mode: multiply;
+}
+.productInfo{
+  align-content: center;
+  text-align: center;
+
+  height: 6rem;
+  width: 12rem;
+ 
+}
+.Name{
+  margin: 2px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: x-large;
+}
+.Add,.Remove{
+  width: 5rem;
+  height: 2rem;
+  margin: 2px;
+  font-size: large;
+  color: white;
+  background-color: rgb(72, 164, 72);
+  border-radius: 5px;
+}
+#cart{
+  width: 20rem;
+  text-align:center;
+  
+  border: 2px solid black;
+  margin: 7rem 0;
+}
+.cartItemCard{
+  display: grid;
+  max-height: 10rem;
+}
+.itemWraper{
+  display: flex;
+  height: 6rem; 
+  margin-top: 1rem;
+  border: 2px solid yellow;
+}
+.itemImg{
+  height:6rem;
+  aspect-ratio: 1;
+  background-size: cover;
+}
+.ItemDetails{
+  font-size:large;
+  font-weight:bold;
+  width:8rem;
+
+ 
+}
+.Remove.Add1{
+  background-color: rgb(146, 27, 27);
+  margin:0.5;
+  border: none;
+}
+#totalCost{
+  margin-top: 5rem;
+  height: 6rem;
+  aspect-ratio: 3;
+  border: 2px solid black;
+  font-size: x-large;
+  font-weight: bolder;
+  padding: 10px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+.placeOrder{
+  height: 2.5rem;
+  aspect-ratio: 4;
+  padding: 5px;
+  margin: 0 2rem;
+  background-color: aqua;
+  font-size: large;
+  font-weight: bolder;
+  border-radius: 7px;
+}
+@media only screen and (max-width: 500px) {
+  #navBar{
+    width: 100vw;
+  }
+  .navOptions{
+    margin: 1rem;
+  }
+  #wraperDiv{
+    display: grid;
+    justify-content: center;
+    margin: 2px 0;
+  }
+#products{
+  width: 100%;
+}
+#cart{
+  display: grid;
+  width: 100%;
+}
+.cartItemCard{
+  display: grid;
+  width: auto;
+}
+}
+

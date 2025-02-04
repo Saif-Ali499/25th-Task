@@ -6,8 +6,8 @@ import "../App.css";
 import { makeCartEmpty } from "../Features/productSlice";
 
 function Order() {
-  const cart = useSelector((state) => state.cart); // Access cart from ECom slice
-  const totalCost = useSelector((state) => state.totalCost); // Access totalCost from ECom slice
+  const cart = useSelector((state) => state.cart); 
+  const totalCost = useSelector((state) => state.totalCost);
   const dispatch = useDispatch();
   return (
     <div id="wraperDiv" className="bg-slate-300">

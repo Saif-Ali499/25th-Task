@@ -15,21 +15,20 @@ export const produceSlice = createSlice({
   reducers: {
     addToCart: (state, action) => {
       const { id, title, price, image } = action.payload;
-      // Check if the item is already in the cart
       const existingIndex = state.cart.findIndex(
         (product) => product.id === id
       );
 
       if (existingIndex !== -1) {
-        // If the item exists, update the quantity
+       
         state.cart[existingIndex].quantity += 1;
       } else {
-        // If the item doesn't exist, add it to the cart
+    
         const item = { id, title, price, quantity: 1, image };
         state.cart.push(item);
       }
 
-      // Update the totalCost
+ 
       state.totalCost = state.cart.reduce(
         (total, item) => total + item.price * item.quantity,
         0
